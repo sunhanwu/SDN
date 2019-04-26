@@ -42,11 +42,8 @@ class MyTopo(Topo):
         self.addLink(Host4,Switches2)
         self.addLink(Host5,Switches3)
         self.addLink(Host6,Switches3)
-        self.addLink(Host7,Switches4)
-        self.addLink(Host8,Switches4)
             # 交换机和交换机之间的连接
         self.addLink(Switches1,Switches2)
         self.addLink(Switches2,Switches3)
-        self.addLink(Switches3,Switches4)
 
 topos = {'mytopo': (lambda: MyTopo())}

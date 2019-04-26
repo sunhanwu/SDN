@@ -20,16 +20,16 @@ def mutiControllerNet(con_num=3,sw_num=4,host_num=8):
 
     # 这里原来是自动控制器的源代码，现在改成自定义控制器Ip
     # c1=RemoteController('c1',ip='127.0.0.1',port=1234)
-    c2=RemoteController('c2',ip='127.0.0.1',port=16633)
+    c2=RemoteController('c2',ip='192.168.43.144',port=6633)
     # c3=RemoteController('c3',ip='127.0.0.1',port=1236)
-    c1=Controller('c1',port=1234)
+    #  c1=Controller('c1',port=1234)
     # c2=Controller('c2',port=1235)
-    c3=Controller('c3',port=1236)
+    #  c3=Controller('c3',port=1236)
     
     # 加入网络
     net.addController(c1)
-    net.addController(c2)
-    net.addController(c3)
+    #  net.addController(c2)
+    #  net.addController(c3)
 
     #加入控制器数组
     controller_list.append(c1)
